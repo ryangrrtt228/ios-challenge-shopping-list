@@ -39,6 +39,36 @@ class ShoppingListTableViewController: UITableViewController {
         
     }
     
-
+    @IBAction func addButtonTapped(sender: AnyObject) {
+        
+        var inputTextField: UITextField?
+        
+        let alert = UIAlertController(title: "Shopping List", message: "Add items to your list.", preferredStyle: UIAlertControllerStyle.Alert)
+        let saveAction = UIAlertAction(title: "Save", style: .Default) { (_) in
+            if let inputTextField = inputTextField,
+                title = inputTextField.text {
+                ShoppingController.sharedController.createItem(title, isComplete: false)
+                self.tableView.reloadData()
+        
+            }
+        }
+        alert.addAction(saveAction)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil))
+        
+        alert.addTextFieldWithConfigurationHandler ({ (textField) in
+            inputTextField = textField
+        })
+        self.presentViewController(alert, animated: true, completion: nil)
+        ShoppingController.sharedController.saveToPersistentStorage()
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            let item = ShoppingController.sharedController.incompletedItems[indexPath.row]
+            ShoppingController.sharedController.deleteItem(item)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        }
+    }
     
 }
