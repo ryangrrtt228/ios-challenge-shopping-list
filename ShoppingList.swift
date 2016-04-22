@@ -12,6 +12,14 @@ import CoreData
 
 class ShoppingList: NSManagedObject {
 
-// Insert code here to add functionality to your managed object subclass
-
+    convenience init(item: String, isComplete: Bool, context: NSManagedObjectContext = Stack.sharedStack.managedObjectContext){
+      let entity = NSEntityDescription.entityForName("ShoppingList", inManagedObjectContext: context)!
+        
+        self.init(entity: entity, insertIntoManagedObjectContext: context)
+        
+        self.item = item
+        self.isComplete = false
+    
+    
+    }
 }
