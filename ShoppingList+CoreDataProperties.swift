@@ -14,7 +14,7 @@ import CoreData
 
 extension ShoppingList {
 
-    @NSManaged var isComplete: NSNumber?
-    @NSManaged var item: String?
+    @NSManaged var isComplete: NSNumber
+    @NSManaged var item: String
 
 }
