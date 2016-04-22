@@ -16,6 +16,8 @@
 		517C50A71CCAB226005E37F0 /* ShoppingList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517C50A51CCAB226005E37F0 /* ShoppingList+CoreDataProperties.swift */; };
 		517C50A81CCAB226005E37F0 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517C50A61CCAB226005E37F0 /* ShoppingList.swift */; };
 		517C50AA1CCAB37A005E37F0 /* ShoppingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517C50A91CCAB37A005E37F0 /* ShoppingController.swift */; };
+		517C50AC1CCAB842005E37F0 /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517C50AB1CCAB842005E37F0 /* ShoppingListTableViewController.swift */; };
+		517C50AE1CCAB994005E37F0 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517C50AD1CCAB994005E37F0 /* ButtonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		517C50A51CCAB226005E37F0 /* ShoppingList+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShoppingList+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		517C50A61CCAB226005E37F0 /* ShoppingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = SOURCE_ROOT; };
 		517C50A91CCAB37A005E37F0 /* ShoppingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingController.swift; sourceTree = "<group>"; };
+		517C50AB1CCAB842005E37F0 /* ShoppingListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewController.swift; sourceTree = "<group>"; };
+		517C50AD1CCAB994005E37F0 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 		517C50A11CCAB183005E37F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				517C50AB1CCAB842005E37F0 /* ShoppingListTableViewController.swift */,
+				517C50AD1CCAB994005E37F0 /* ButtonTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -182,6 +188,8 @@
 				517C509D1CCAB13A005E37F0 /* Stack.swift in Sources */,
 				1A4A231D1CCA8D2C003A4350 /* AppDelegate.swift in Sources */,
 				517C50A81CCAB226005E37F0 /* ShoppingList.swift in Sources */,
+				517C50AE1CCAB994005E37F0 /* ButtonTableViewCell.swift in Sources */,
+				517C50AC1CCAB842005E37F0 /* ShoppingListTableViewController.swift in Sources */,
 				517C50A41CCAB1B5005E37F0 /* Model.xcdatamodeld in Sources */,
 				517C50A71CCAB226005E37F0 /* ShoppingList+CoreDataProperties.swift in Sources */,
 				517C50AA1CCAB37A005E37F0 /* ShoppingController.swift in Sources */,
